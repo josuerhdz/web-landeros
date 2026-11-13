@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altura Coffee Co. | Grown high. Brewed right.</title>
+  <meta name="description" content="Altura Coffee Co. — specialty high-altitude Mexican coffee, sourced directly from small farms in Veracruz, Chiapas and Oaxaca.">
+
+  <!-- Ícono de la pestaña (usamos el isotipo) -->
+  <link rel="icon" type="image/svg+xml" href="assets/isotipo.svg">
+
+  <!-- Tipografías de Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Enlace para saltar al contenido (accesibilidad con teclado) -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== MENÚ DE NAVEGACIÓN ===================== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="nav__brand" aria-label="Altura Coffee Co. home">
+        <img src="assets/isotipo.svg" alt="" width="40" height="40">
+        <span>Altura <small>Coffee Co.</small></span>
+      </a>
+
+      <!-- Botón hamburguesa (solo visible en celular) -->
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link">Home</a></li>
+        <li><a href="#about" class="nav__link">About Us</a></li>
+        <li><a href="#products" class="nav__link">Products</a></li>
+        <li><a href="#value-chain" class="nav__link">Value Chain</a></li>
+        <li><a href="#faq" class="nav__link">FAQ</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== 1. INICIO (HOME) ===================== -->
+    <section class="hero" id="home">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <p class="eyebrow reveal">Specialty Mexican coffee · Since 2014</p>
+          <!-- Elemento 1: Nombre comercial -->
+          <h1 class="hero__title reveal">Altura <span>Coffee Co.</span></h1>
+          <!-- Elemento 12: Eslogan -->
+          <p class="hero__slogan reveal">“Grown high. Brewed right.”</p>
+          <p class="hero__lead reveal">
+            We source coffee grown above 1,200 meters in the mountains of Veracruz, Chiapas and Oaxaca,
+            roast it in small batches and deliver it fresh to your door.
+          </p>
+          <div class="hero__actions reveal">
+            <a href="#products" class="btn btn--primary">Explore our coffee</a>
+            <a href="#value-chain" class="btn btn--ghost">How we work →</a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__circle"></div>
+          <!-- Elemento 14: Mascota -->
+          <img src="assets/mascota.svg" alt="Tito, our coffee bean mascot, waving" class="hero__mascot" width="320" height="384">
+          <div class="hero__badge hero__badge--top">☕ Roasted this week</div>
+          <div class="hero__badge hero__badge--bottom">🌱 100% direct trade</div>
+        </div>
+      </div>
+
+      <!-- Cifras animadas -->
+      <div class="container stats">
+        <div class="stat reveal"><strong class="counter" data-target="12">0</strong><span>Partner farms</span></div>
+        <div class="stat reveal"><strong class="counter" data-target="1350" data-suffix=" m">0</strong><span>Average altitude</span></div>
+        <div class="stat reveal"><strong class="counter" data-target="40" data-suffix="k+">0</strong><span>Cups served monthly</span></div>
+        <div class="stat reveal"><strong class="counter" data-target="98" data-suffix="%">0</strong><span>Happy customers</span></div>
+      </div>
+    </section>
+
+    <!-- ===================== IDENTIDAD DE MARCA ===================== -->
+    <!-- Agrupa: Logotipo (10), Isotipo (11), Eslogan (12), Colorimetría (13) y Mascota (14) -->
+    <section class="section section--white" id="brand">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Brand identity</p>
+          <h2>The face of Altura</h2>
+          <p>Every element of our brand tells the same story: great coffee starts high in the mountains.</p>
+        </header>
+
+        <div class="brand-grid">
+          <article class="card brand-card reveal">
+            <div class="brand-card__preview"><img src="assets/logo.svg" alt="Altura Coffee Co. logo" width="240" height="57"></div>
+            <h3>Logo</h3>
+            <p>Our isotype plus the brand name. Used on packaging, the website and official documents.</p>
+          </article>
+
+          <article class="card brand-card reveal">
+            <div class="brand-card__preview"><img src="assets/isotipo.svg" alt="Altura Coffee Co. isotype" width="88" height="88"></div>
+            <h3>Isotype</h3>
+            <p>A coffee bean rising like the sun over two mountains: altitude and origin in a single symbol.</p>
+          </article>
+
+          <article class="card brand-card reveal">
+            <div class="brand-card__preview brand-card__preview--dark">
+              <p class="slogan-preview">Grown high.<br>Brewed right.</p>
+            </div>
+            <h3>Slogan</h3>
+            <p>It sums up our promise: the best beans from the highest farms, roasted and brewed with care.</p>
+          </article>
+
+          <article class="card brand-card reveal">
+            <div class="brand-card__preview"><img src="assets/mascota.svg" alt="Tito the coffee bean" width="96" height="115"></div>
+            <h3>Mascot · Tito</h3>
+            <p>Tito is a friendly coffee bean with a leaf on his head. He represents the farmers' care and our joyful spirit.</p>
+          </article>
+        </div>
+
+        <!-- Elemento 13: Colorimetría -->
+        <div class="palette reveal">
+          <h3>Color palette <small>(click a color to copy its code)</small></h3>
+          <div class="palette__grid">
+            <button class="swatch" data-color="#2B1A12" style="--swatch:#2B1A12">
+              <span class="swatch__color"></span><strong>Espresso</strong><code>#2B1A12</code><em>Trust & elegance</em>
+            </button>
+            <button class="swatch" data-color="#6B4226" style="--swatch:#6B4226">
+              <span class="swatch__color"></span><strong>Roast</strong><code>#6B4226</code><em>Warmth & coffee</em>
+            </button>
+            <button class="swatch" data-color="#D9734E" style="--swatch:#D9734E">
+              <span class="swatch__color"></span><strong>Terracotta</strong><code>#D9734E</code><em>Energy & Mexican earth</em>
+            </button>
+            <button class="swatch" data-color="#3F7D5C" style="--swatch:#3F7D5C">
+              <span class="swatch__color"></span><strong>Mountain Leaf</strong><code>#3F7D5C</code><em>Nature & sustainability</em>
+            </button>
+            <button class="swatch" data-color="#F7F1E8" style="--swatch:#F7F1E8">
+              <span class="swatch__color"></span><strong>Cream</strong><code>#F7F1E8</code><em>Calm & freshness</em>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 2. ¿QUIÉNES SOMOS? (ABOUT US) ===================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">About us</p>
+          <h2>From a family farm to your cup</h2>
+        </header>
+
+        <!-- Elemento 2: Historia de la empresa -->
+        <div class="about-grid">
+          <div class="reveal">
+            <h3 class="subtitle">Our story</h3>
+            <ol class="timeline">
+              <li>
+                <span class="timeline__year">2014</span>
+                <p>Siblings Daniela and Marco Altamirano return to their grandparents' coffee farm in Coatepec, Veracruz, and roast their first batch in a small garage.</p>
+              </li>
+              <li>
+                <span class="timeline__year">2017</span>
+                <p>They partner with 5 farming families in Chiapas and open their first coffee bar in Xalapa.</p>
+              </li>
+              <li>
+                <span class="timeline__year">2020</span>
+                <p>Altura launches its online store and starts shipping fresh coffee to all of Mexico.</p>
+              </li>
+              <li>
+                <span class="timeline__year">2023</span>
+                <p>The brand adds Oaxacan farms, launches its Cold Brew line and reaches 12 partner farms.</p>
+              </li>
+              <li>
+                <span class="timeline__year">2026</span>
+                <p>Altura exports to the United States and Canada and opens a new roastery with solar energy.</p>
+              </li>
+            </ol>
+          </div>
+
+          <div class="mv">
+            <!-- Elemento 3: Misión -->
+            <article class="card mv__card reveal">
+              <span class="mv__icon" aria-hidden="true">🎯</span>
+              <h3>Mission</h3>
+              <p>To bring the finest high-altitude Mexican coffee to every cup, paying fair prices to the farmers who grow it and roasting it with care so every customer enjoys a fresh, honest and sustainable coffee experience.</p>
+            </article>
+            <!-- Elemento 4: Visión -->
+            <article class="card mv__card reveal">
+              <span class="mv__icon" aria-hidden="true">🔭</span>
+              <h3>Vision</h3>
+              <p>By 2030, to be the most recognized specialty coffee brand from Mexico in North America, known for transparent sourcing and for improving the lives of 500 coffee-farming families.</p>
+            </article>
+          </div>
+        </div>
+
+        <!-- Elemento 5: Valores -->
+        <h3 class="subtitle reveal">Our values</h3>
+        <div class="values">
+          <div class="value reveal"><span aria-hidden="true">🤝</span><h4>Fair trade</h4><p>We pay farmers up to 40% above the market price.</p></div>
+          <div class="value reveal"><span aria-hidden="true">🔍</span><h4>Transparency</h4><p>Every bag shows the farm, altitude and roast date.</p></div>
+          <div class="value reveal"><span aria-hidden="true">⭐</span><h4>Quality</h4><p>We only buy coffee that scores 84+ points.</p></div>
+          <div class="value reveal"><span aria-hidden="true">🌱</span><h4>Sustainability</h4><p>Compostable packaging and a solar-powered roastery.</p></div>
+          <div class="value reveal"><span aria-hidden="true">🏡</span><h4>Community</h4><p>We invest 5% of profits in rural schools.</p></div>
+        </div>
+
+        <!-- Elemento 6: Descripción de las actividades que realiza -->
+        <h3 class="subtitle reveal">What we do</h3>
+        <div class="activities">
+          <article class="activity reveal">
+            <span class="activity__num">01</span>
+            <h4>Source</h4>
+            <p>We visit each farm, select the best lots and buy directly from the producers, without intermediaries.</p>
+          </article>
+          <article class="activity reveal">
+            <span class="activity__num">02</span>
+            <h4>Roast</h4>
+            <p>We roast in small 15 kg batches, creating a specific roast profile for each origin.</p>
+          </article>
+          <article class="activity reveal">
+            <span class="activity__num">03</span>
+            <h4>Pack & sell</h4>
+            <p>We pack within 24 hours and sell through our online store, our coffee bar and partner cafés.</p>
+          </article>
+          <article class="activity reveal">
+            <span class="activity__num">04</span>
+            <h4>Educate</h4>
+            <p>We run brewing workshops and cuppings so people learn to enjoy specialty coffee at home.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 3. PRODUCTOS ===================== -->
+    <section class="section section--white" id="products">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Products</p>
+          <h2>Our product mix</h2>
+          <p>4 product lines (width) and 14 products in total (length), designed for every way of enjoying coffee.</p>
+        </header>
+
+        <div class="product-lines">
+          <article class="card line reveal">
+            <span class="line__tag">Line 1 · Featured</span>
+            <h3>Whole Bean</h3>
+            <ul><li>Chiapas Highland</li><li>Veracruz Classic</li><li>Oaxaca Pluma</li><li>Altura Blend</li></ul>
+          </article>
+          <article class="card line reveal">
+            <span class="line__tag">Line 2</span>
+            <h3>Ground Coffee</h3>
+            <ul><li>Espresso grind</li><li>Drip grind</li><li>French press grind</li><li>Decaf</li></ul>
+          </article>
+          <article class="card line reveal">
+            <span class="line__tag">Line 3</span>
+            <h3>Cold Brew</h3>
+            <ul><li>Classic Cold Brew</li><li>Vanilla Cold Brew</li><li>Cold Brew Concentrate</li></ul>
+          </article>
+          <article class="card line reveal">
+            <span class="line__tag">Line 4</span>
+            <h3>Brewing Gear</h3>
+            <ul><li>Pour-over kit</li><li>Ceramic mug</li><li>Manual grinder</li></ul>
+          </article>
+        </div>
+
+        <!-- Elemento 7: Descripción detallada de uno de los componentes de la mezcla de productos -->
+        <article class="featured reveal">
+          <div class="featured__visual" aria-hidden="true">
+            <div class="bag">
+              <img src="assets/isotipo.svg" alt="" width="64" height="64">
+              <strong>CHIAPAS<br>HIGHLAND</strong>
+              <span>Single origin · 340 g</span>
+            </div>
+          </div>
+          <div class="featured__info">
+            <p class="eyebrow">Product in detail</p>
+            <h3>Chiapas Highland — Single-Origin Whole Bean</h3>
+            <p>
+              Our best seller and the heart of the <strong>Whole Bean</strong> line. It is grown by the López family
+              at 1,500 meters in the Sierra Madre of Chiapas, under the shade of native trees. The cherries are
+              hand-picked only when fully ripe, washed and sun-dried for 15 days. We roast it to a medium level to keep
+              its natural sweetness and acidity.
+            </p>
+            <table class="specs">
+              <tbody>
+                <tr><th>Origin</th><td>Siltepec, Chiapas, Mexico</td></tr>
+                <tr><th>Altitude</th><td>1,500 m above sea level</td></tr>
+                <tr><th>Variety</th><td>Bourbon & Typica (100% Arabica)</td></tr>
+                <tr><th>Process</th><td>Washed, sun-dried</td></tr>
+                <tr><th>Roast</th><td>Medium</td></tr>
+                <tr><th>Tasting notes</th><td>Milk chocolate, orange, brown sugar</td></tr>
+                <tr><th>Sizes (depth)</th><td>250 g · 340 g · 1 kg</td></tr>
+                <tr><th>Price</th><td>$189 MXN (250 g) · $239 MXN (340 g) · $590 MXN (1 kg)</td></tr>
+                <tr><th>Packaging</th><td>Compostable bag with one-way valve and QR code to the farm's story</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+
+        <!-- Elemento 8: Perfil del consumidor -->
+        <div class="consumer reveal">
+          <div class="persona card">
+            <div class="persona__avatar" aria-hidden="true">👩🏻‍💻</div>
+            <h3>Meet “Sofía”</h3>
+            <p class="persona__role">Our typical customer</p>
+            <p>“I work from home and my morning coffee is my ritual. I like knowing where it comes from and that the farmers are paid fairly.”</p>
+          </div>
+          <div class="consumer__data">
+            <h3 class="subtitle">Consumer profile</h3>
+            <div class="profile-grid">
+              <div class="profile-item"><h4>Demographic</h4><p>Men and women, 25–45 years old, living in urban areas, middle to upper-middle income, college-educated.</p></div>
+              <div class="profile-item"><h4>Psychographic</h4><p>Value quality, sustainability and authentic experiences. They enjoy cooking, traveling and healthy living.</p></div>
+              <div class="profile-item"><h4>Behavioral</h4><p>Drink 2+ cups a day, buy online every 2–4 weeks and are willing to pay more for traceable coffee.</p></div>
+              <div class="profile-item"><h4>Needs</h4><p>Fresh coffee, convenient delivery, clear information about origin and easy brewing guides.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 4. CADENA DE VALOR ===================== -->
+    <section class="section" id="value-chain">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Value chain</p>
+          <h2>How we create value</h2>
+          <p>Based on Michael Porter's model: the activities that turn a coffee cherry into the cup you love.</p>
+        </header>
+
+        <div class="chain">
+          <!-- Actividades de apoyo -->
+          <div class="chain__support">
+            <h3 class="chain__label">Support activities</h3>
+            <div class="support reveal"><strong>Firm infrastructure</strong><span>Management, finance, quality certifications and legal compliance for export.</span></div>
+            <div class="support reveal"><strong>Human resources</strong><span>Training for baristas, roasters and farmers; fair wages and benefits.</span></div>
+            <div class="support reveal"><strong>Technology development</strong><span>Online store, roasting software, QR traceability and solar energy.</span></div>
+            <div class="support reveal"><strong>Procurement</strong><span>Direct purchase of green coffee, compostable packaging and equipment.</span></div>
+          </div>
+
+          <!-- Actividades primarias -->
+          <h3 class="chain__label">Primary activities</h3>
+          <div class="chain__primary">
+            <div class="primary reveal"><span class="primary__icon" aria-hidden="true">🚚</span><strong>Inbound logistics</strong><span>Receiving and storing green coffee from 12 partner farms.</span></div>
+            <div class="primary reveal"><span class="primary__icon" aria-hidden="true">🔥</span><strong>Operations</strong><span>Cupping, roasting, grinding and packing in small batches.</span></div>
+            <div class="primary reveal"><span class="primary__icon" aria-hidden="true">📦</span><strong>Outbound logistics</strong><span>Shipping to customers, cafés and stores in 24–72 hours.</span></div>
+            <div class="primary reveal"><span class="primary__icon" aria-hidden="true">📣</span><strong>Marketing & sales</strong><span>Online store, social media, coffee bar and subscriptions.</span></div>
+            <div class="primary reveal"><span class="primary__icon" aria-hidden="true">💬</span><strong>Service</strong><span>Brewing guides, workshops and customer support via chat.</span></div>
+          </div>
+          <div class="chain__margin reveal">Margin = value the customer perceives − cost of the activities</div>
+        </div>
+
+        <!-- Elemento 9: Link a video inédito donde se describa la cadena de valor -->
+        <div class="video-cta reveal">
+          <div>
+            <p class="eyebrow eyebrow--light">Exclusive video</p>
+            <h3>Watch our value chain in action</h3>
+            <p>Follow the journey of our coffee from the farm in Chiapas to your cup in this original video.</p>
+          </div>
+          <!-- ⚠️ REEMPLAZA el href con el link de TU video (YouTube, Drive, etc.) -->
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener" class="video-cta__play" aria-label="Watch the value chain video (opens in a new tab)">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span>Watch video</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 5. PREGUNTAS FRECUENTES ===================== -->
+    <section class="section section--white" id="faq">
+      <div class="container container--narrow">
+        <header class="section__header reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2>Frequently asked questions</h2>
+        </header>
+
+        <!-- Usamos <details>/<summary>: un acordeón nativo de HTML, sin JavaScript -->
+        <div class="faq">
+          <details class="faq__item reveal" open>
+            <summary>What makes high-altitude coffee special?</summary>
+            <p>At higher altitudes the coffee cherries grow more slowly. This gives the beans more sugars and complex flavors, so the cup is sweeter and more aromatic.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>How fresh is the coffee when it arrives?</summary>
+            <p>We roast every week and ship within 24 hours of roasting. Each bag shows the exact roast date.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Do you ship outside Mexico?</summary>
+            <p>Yes. We ship to the United States and Canada. International orders arrive in 5–8 business days.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Should I buy whole bean or ground coffee?</summary>
+            <p>Whole bean stays fresh longer and gives you the best flavor if you have a grinder. If not, choose ground coffee and tell us your brewing method.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Do you offer subscriptions?</summary>
+            <p>Yes. You can receive coffee every 2, 3 or 4 weeks with a 10% discount, and pause or cancel anytime.</p>
+          </details>
+          <details class="faq__item reveal">
+            <summary>Is your packaging really compostable?</summary>
+            <p>Yes. Our bags are made from plant-based materials and break down in an industrial compost facility in about 6 months.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== 6. CONTACTO ===================== -->
+    <section class="section" id="contact">
+      <div class="container contact">
+        <div class="contact__info reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's talk coffee</h2>
+          <p>Questions, wholesale orders or a visit to our roastery? We'd love to hear from you.</p>
+          <ul class="contact__list">
+            <li><span aria-hidden="true">📍</span> Av. Xalapa 120, Coatepec, Veracruz, Mexico</li>
+            <li><span aria-hidden="true">📞</span> +52 228 000 0000</li>
+            <li><span aria-hidden="true">✉️</span> hello@alturacoffee.example</li>
+            <li><span aria-hidden="true">🕘</span> Mon–Sat · 8:00 am – 8:00 pm</li>
+          </ul>
+        </div>
+
+        <form class="form card reveal" id="contactForm" novalidate>
+          <div class="form__row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@email.com" required>
+            <small class="form__error"></small>
+          </div>
+          <div class="form__row">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option>General question</option>
+              <option>Online order</option>
+              <option>Wholesale</option>
+              <option>Workshops</option>
+            </select>
+          </div>
+          <div class="form__row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="How can we help you?" required></textarea>
+            <small class="form__error"></small>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button>
+          <p class="form__success" id="formSuccess" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== PIE DE PÁGINA ===================== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#home" class="nav__brand nav__brand--light">
+          <img src="assets/isotipo.svg" alt="" width="40" height="40">
+          <span>Altura <small>Coffee Co.</small></span>
+        </a>
+        <p class="footer__slogan">Grown high. Brewed right.</p>
+      </div>
+      <ul class="footer__links">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#value-chain">Value Chain</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <p class="footer__copy container">© <span id="year"></span> Altura Coffee Co. — Fictional company created for a school project.</p>
+  </footer>
+
+  <!-- Botón para volver arriba -->
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top">↑</a>
+
+  <!-- Mensaje flotante (al copiar un color) -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- JavaScript al final para que la página cargue primero -->
+  <script src="js/main.js"></script>
+</body>
+</html>

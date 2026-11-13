@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-label="Tito, the Altura Coffee mascot">
+  <style>
+    /* Animación: Tito saluda moviendo la mano */
+    .wave { transform-box: fill-box; transform-origin: 100% 100%; animation: wave 2.4s ease-in-out infinite; }
+    @keyframes wave { 0%, 60%, 100% { transform: rotate(0deg); } 70% { transform: rotate(-18deg); } 80% { transform: rotate(10deg); } 90% { transform: rotate(-12deg); } }
+    @media (prefers-reduced-motion: reduce) { .wave { animation: none; } }
+  </style>
+
+  <!-- Sombra -->
+  <ellipse cx="100" cy="228" rx="50" ry="7" fill="#000" opacity=".12"/>
+
+  <!-- Piernas y zapatos -->
+  <rect x="80" y="182" width="10" height="36" rx="5" fill="#2B1A12"/>
+  <rect x="110" y="182" width="10" height="36" rx="5" fill="#2B1A12"/>
+  <ellipse cx="82" cy="219" rx="13" ry="6" fill="#3F7D5C"/>
+  <ellipse cx="118" cy="219" rx="13" ry="6" fill="#3F7D5C"/>
+
+  <!-- Brazo izquierdo (saludando) -->
+  <g class="wave">
+    <path d="M54 118 Q30 108 26 84" stroke="#6B4226" stroke-width="10" fill="none" stroke-linecap="round"/>
+    <circle cx="26" cy="80" r="9" fill="#6B4226"/>
+  </g>
+  <!-- Brazo derecho -->
+  <path d="M146 124 Q168 140 162 162" stroke="#6B4226" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <circle cx="161" cy="165" r="9" fill="#6B4226"/>
+
+  <!-- Cuerpo (grano de café) -->
+  <ellipse cx="100" cy="120" rx="56" ry="74" fill="#6B4226"/>
+  <ellipse cx="78" cy="88" rx="13" ry="24" fill="#fff" opacity=".12"/>
+  <!-- Línea del grano -->
+  <path d="M100 48 C88 62, 112 72, 100 86" stroke="#3E2516" stroke-width="5" fill="none" stroke-linecap="round"/>
+
+  <!-- Hoja en la cabeza -->
+  <path d="M100 48 C106 28, 128 20, 138 24 C132 40, 116 50, 100 48 Z" fill="#3F7D5C"/>
+  <path d="M104 45 Q118 34 132 27" stroke="#2E5E44" stroke-width="2" fill="none"/>
+
+  <!-- Ojos -->
+  <ellipse cx="82" cy="112" rx="10" ry="12" fill="#fff"/>
+  <ellipse cx="118" cy="112" rx="10" ry="12" fill="#fff"/>
+  <circle cx="84" cy="115" r="5.5" fill="#1A0F0A"/>
+  <circle cx="120" cy="115" r="5.5" fill="#1A0F0A"/>
+  <circle cx="86" cy="112" r="1.8" fill="#fff"/>
+  <circle cx="122" cy="112" r="1.8" fill="#fff"/>
+
+  <!-- Mejillas y sonrisa -->
+  <ellipse cx="70" cy="134" rx="8" ry="5" fill="#D9734E" opacity=".75"/>
+  <ellipse cx="130" cy="134" rx="8" ry="5" fill="#D9734E" opacity=".75"/>
+  <path d="M88 138 Q100 151 112 138" stroke="#1A0F0A" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

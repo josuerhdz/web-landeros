@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Altura Coffee Co. isotype">
+  <!-- Fondo -->
+  <rect width="64" height="64" rx="16" fill="#2B1A12"/>
+  <!-- Grano de café (el "sol" sobre la montaña) -->
+  <g transform="rotate(30 41 20)">
+    <ellipse cx="41" cy="20" rx="7" ry="10" fill="#D9734E"/>
+    <path d="M41 11 C37 16, 45 24, 41 29" stroke="#2B1A12" stroke-width="2" fill="none" stroke-linecap="round"/>
+  </g>
+  <!-- Montañas (la "altura") -->
+  <path d="M7 51 L24 27 L32 38 L41 29 L57 51 Z" fill="#F7F1E8"/>
+  <path d="M24 27 L29 34 L24 32 L19 34 Z" fill="#3F7D5C"/>
+  <path d="M41 29 L45 34.5 L41 33 L37 34.5 Z" fill="#3F7D5C"/>
+</svg>
